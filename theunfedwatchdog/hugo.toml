@@ -32,11 +32,9 @@ disableKinds = ["taxonomy", "term"]
   [params.homeInfoParams]
     Title = ""
     Content = """
-<img src="logo.png" alt="avatar" width="120" style="border-radius:50%;" />
+<img src="logo.png" alt="avatar" class="avatar" />
 
-<br/>
-
-<b>Akshat Sharma</b><br/>
+<span class="profile-name">Akshat Sharma</span>
 Embedded and Robotics Engineer
 """
 
