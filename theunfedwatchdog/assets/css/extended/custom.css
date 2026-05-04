@@ -1,0 +1,16 @@
+/* Center homepage intro */
+.home-info {
+    text-align: center;
+}
+
+/* Center the image */
+.home-info img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Optional: make it look nicer */
+.home-info .entry-content {
+    max-width: 600px;
+    margin: 0 auto;
+}

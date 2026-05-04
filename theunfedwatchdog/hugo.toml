@@ -1,4 +1,66 @@
 baseURL = 'https://akshatsharma05.github.io/theunfedwatchdog.github.io/'
-locale = 'en-us'
-title = 'The Unfed Watchdog'
-theme = 'LoveIt'
+languageCode = "en-us"
+title = "The Unfed Watchdog"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+enableEmoji = true
+
+# Disable tags/categories completely
+disableKinds = ["taxonomy", "term"]
+
+[pagination]
+  pagerSize = 5
+
+[params]
+  env = "production"
+  title = "The Unfed Watchdog"
+  description = "Personal blog of Akshat Sharma"
+  author = "Akshat Sharma"
+  images = ["/logo.png"]
+
+  defaultTheme = "auto"
+
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+  # --- Homepage Intro (Profile + Posts below) ---
+  [params.homeInfoParams]
+    Title = ""
+    Content = """
+<img src="logo.png" alt="avatar" width="120" style="border-radius:50%;" />
+
+<br/>
+
+<b>Akshat Sharma</b><br/>
+Embedded and Robotics Engineer
+"""
+
+  # --- Social ---
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/akshatsharma05"
+
+  [[params.socialIcons]]
+    name = "Linkedin"
+    url = "https://www.linkedin.com/in/akshat-sharma-166932161/"
+
+# --- Menu (no tags) ---
+[menu]
+
+  [[menu.main]]
+    name = "Search"
+    url = "search/"
+    weight = 10
+
+# --- Markdown ---
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.highlight]
+    noClasses = false
