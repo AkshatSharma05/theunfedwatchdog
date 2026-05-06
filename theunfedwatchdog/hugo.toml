@@ -47,6 +47,14 @@ Embedded and Robotics Engineer
     name = "Linkedin"
     url = "https://www.linkedin.com/in/akshat-sharma-166932161/"
 
+  [[params.socialIcons]]
+    name = "Instagram"
+    url = "https://www.instagram.com/hominum0447/"
+
+  [[params.socialIcons]]
+    name = "Email"
+    url = "mailto:d06akshat@gmail.com"
+
 # --- Menu (no tags) ---
 [menu]
 

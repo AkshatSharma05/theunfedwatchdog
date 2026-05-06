@@ -27,8 +27,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-info img.avatar {
-  border-radius: 50% !important;
-  object-fit: cover !important;
+  width: min(40vw, 180px); 
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 .profile-name {
