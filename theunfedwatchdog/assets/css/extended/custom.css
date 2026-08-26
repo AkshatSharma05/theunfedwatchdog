@@ -1,44 +1,212 @@
-/* Import font */
-/* Apply globally */
+/* =========================
+   Fonts
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* =========================
+   Global Typography
+========================= */
+
 body {
     font-family: 'IBM Plex Mono', monospace;
+    line-height: 1.85;
+    font-size: 16px;
 }
 
-/* Optional: headings */
-h1, h2, h3, h4, h5, h6 {
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Inter', sans-serif;
+    color: #58a6ff;
+    font-weight: 700;
+    line-height: 1.3;
 }
 
-/* Center homepage intro */
+/* Better paragraph spacing */
+
+.post-content p {
+    margin-bottom: 1.3rem;
+}
+
+/* =========================
+   Homepage
+========================= */
+
 .home-info {
     text-align: center;
 }
 
-/* Center the image */
+/* Center homepage image */
+
 .home-info img {
     display: block;
     margin: 0 auto;
 }
 
-/* Optional: make it look nicer */
+/* Better content width */
+
 .home-info .entry-content {
     max-width: 600px;
     margin: 0 auto;
 }
 
+/* Avatar */
+
 .home-info img.avatar {
-  width: min(40vw, 180px); 
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
+    width: min(40vw, 180px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+
 }
 
+/* Name */
+
 .profile-name {
-  font-size: clamp(20px, 4vw, 36px);
-  font-weight: 700;
-  text-align: center;
-  display: block;
-  margin-top: 5px;
+    font-size: clamp(20px, 4vw, 36px);
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
 }
+
+/* =========================
+   Article Styling
+========================= */
+
+/* Main content width */
+
+.post-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Inline code */
+
+.post-content code {
+    background: #161b22;
+    color: #79c0ff;
+    padding: 0.15rem 0.4rem;
+    border-radius: 6px;
+    font-size: 0.95em;
+}
+
+/* Code blocks */
+
+.post-content pre {
+    background: #161b22 !important;
+    border: 1px solid #30363d;
+    border-radius: 14px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+/* Remove double background */
+
+.post-content pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/* Blockquotes */
+
+.post-content blockquote {
+    border-left: 4px solid #58a6ff;
+    background: rgba(88, 166, 255, 0.08);
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    color: #c9d1d9;
+    margin: 1.5rem 0;
+}
+
+/* Tables */
+
+.post-content table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+}
+
+/* Table headers */
+
+.post-content th {
+    background: #161b22;
+    color: #58a6ff;
+    font-weight: 700;
+}
+
+/* Table cells */
+
+.post-content th,
+.post-content td {
+    border: 1px solid #30363d;
+    padding: 0.85rem;
+}
+
+/* Horizontal rule */
+
+.post-content hr {
+    border: none;
+    border-top: 1px solid #30363d;
+    margin: 3rem 0;
+    opacity: 0.6;
+}
+
+/* Links */
+
+.post-content a {
+    color: #79c0ff;
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   Nice Selection Color
+========================= */
+
+::selection {
+    background: rgba(88, 166, 255, 0.3);
+}
+
+/* =========================
+   Smooth Scrolling
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.post-entry {
+    position: relative;
+}
+
+.post-entry .entry-cover {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    float: right;
+    margin-left: 1rem;
+}
+
+.post-entry .entry-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

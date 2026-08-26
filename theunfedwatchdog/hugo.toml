@@ -22,11 +22,12 @@ disableKinds = ["taxonomy", "term"]
   defaultTheme = "auto"
 
   ShowReadingTime = true
-  ShowShareButtons = true
+  ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowToc = true
+  ShowListThumbnails = true
 
   # --- Homepage Intro (Profile + Posts below) ---
   [params.homeInfoParams]
@@ -57,11 +58,10 @@ Embedded and Robotics Engineer
 
 # --- Menu (no tags) ---
 [menu]
-
-  [[menu.main]]
-    name = "Search"
-    url = "search/"
-    weight = 10
+[[menu.main]]
+  name = "Download CV"
+  url = "/docs/resume/AKSHAT_SHARMA_CV.pdf"
+  weight = 10
 
 # --- Markdown ---
 [markup]
@@ -70,3 +70,4 @@ Embedded and Robotics Engineer
 
   [markup.highlight]
     noClasses = false
+
