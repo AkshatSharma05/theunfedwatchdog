@@ -60,7 +60,7 @@ Embedded and Robotics Engineer
 [menu]
 [[menu.main]]
   name = "Download CV"
-  url = "/docs/resume/AKSHAT_SHARMA_CV.pdf"
+  url = "/docs/resume/akshat_sharma_cv.pdf"
   weight = 10
 
 # --- Markdown ---
